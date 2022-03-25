@@ -1,4 +1,4 @@
-# mvvm_skeleton
+# Isagri
 
 A new Flutter project.
 
