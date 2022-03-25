@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:mvvm_skeleton/src/presentation/resources/assets_manager.dart';
+import 'package:mvvm_skeleton/src/presentation/resources/values_manager.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class TipsPage extends StatefulWidget {
@@ -13,29 +16,19 @@ class _TipsPageState extends State<TipsPage> {
 
   @override
   void initState() {
-    _controller = YoutubePlayerController(
-      initialVideoId: 'iLnmTe5Q2Qw',
-      flags: const YoutubePlayerFlags(
-        mute: false,
-        autoPlay: true,
-      ),
-    );
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return YoutubePlayer(
-      controller: _controller,
-      showVideoProgressIndicator: true,
-      progressIndicatorColor: Colors.amber,
-      progressColors: ProgressBarColors(
-        playedColor: Colors.amber,
-        handleColor: Colors.amberAccent,
-      ),
-      onReady: () {
-        print('Player is ready.');
-      },
+    return Center(child: _getAnimatedImage(JsonAssets.empty));
+  }
+
+  Widget _getAnimatedImage(String animationName) {
+    return SizedBox(
+      height: AppSize.s220,
+      width: AppSize.s220,
+      child: Lottie.asset(animationName),
     );
   }
 }

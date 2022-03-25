@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_skeleton/src/presentation/main/audit.dart';
+import 'package:mvvm_skeleton/src/presentation/main/finance.dart';
 import 'package:mvvm_skeleton/src/presentation/main/home/home_page.dart';
 import 'package:mvvm_skeleton/src/presentation/main/tips_page.dart';
 import 'package:mvvm_skeleton/src/presentation/main/settings_page.dart';

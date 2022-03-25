@@ -105,18 +105,18 @@ class CustomTheme {
               fontSize: FontSize.s16, color: ColorManager.error),
 
           // enabled border
-          enabledBorder: OutlineInputBorder(
-              borderSide:
-                  BorderSide(color: ColorManager.grey, width: AppSize.s1_5),
-              borderRadius:
-                  const BorderRadius.all(Radius.circular(AppSize.s8))),
+          // enabledBorder: OutlineInputBorder(
+          //     borderSide:
+          //         BorderSide(color: ColorManager.grey, width: AppSize.s1_5),
+          //     borderRadius:
+          //         const BorderRadius.all(Radius.circular(AppSize.s8))),
 
           // focused border
-          focusedBorder: OutlineInputBorder(
-              borderSide:
-                  BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
-              borderRadius:
-                  const BorderRadius.all(Radius.circular(AppSize.s8))),
+          // focusedBorder: OutlineInputBorder(
+          //     borderSide:
+          //         BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+          //     borderRadius:
+          //         const BorderRadius.all(Radius.circular(AppSize.s8))),
 
           // error border
           errorBorder: OutlineInputBorder(
